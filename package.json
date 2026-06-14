@@ -1,0 +1,23 @@
+{
+  "name": "goit-advancedjs-hw-03",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/goit-advancedjs-hw-03/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "axios": "^1.17.0",
+    "glob": "^13.0.6",
+    "izitoast": "^1.4.0",
+    "modern-normalize": "^3.0.1",
+    "postcss": "^8.5.15",
+    "postcss-sort-media-queries": "^6.6.1",
+    "simplelightbox": "^2.14.3",
+    "vite": "^8.0.12",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
+  }
+}
