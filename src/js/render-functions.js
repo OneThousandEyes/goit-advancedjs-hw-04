@@ -1,5 +1,13 @@
-import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.esm.js';
+import SimpleLightboxModule from 'simplelightbox/dist/simple-lightbox.modules.js';
 import 'simplelightbox/dist/simple-lightbox.min.css';
+
+const SimpleLightbox = SimpleLightboxModule.default ?? SimpleLightboxModule;
+
+const refs = {
+  galleryList: document.querySelector('.js-gallery'),
+  preloader: document.querySelector('.js-loader'),
+  loadMoreBtn: document.querySelector('.js-load-more-btn'),
+};
 
 const lightboxOptions = {
   captionsData: 'alt',
@@ -48,11 +56,6 @@ const createGallery = images => {
   }
 };
 
-const refs = {
-  galleryList: document.querySelector('.js-gallery'),
-  preloader: document.querySelector('.js-loader'),
-};
-
 const clearGallery = () => {
   if (lightbox) {
     lightbox.destroy();
@@ -70,4 +73,19 @@ const hideLoader = () => {
   refs.preloader.classList.remove('is-active');
 };
 
-export { createGallery, clearGallery, showLoader, hideLoader };
+const showLoadMoreButton = () => {
+  refs.loadMoreBtn.classList.remove('is-hidden');
+};
+
+const hideLoadMoreButton = () => {
+  refs.loadMoreBtn.classList.add('is-hidden');
+};
+
+export {
+  createGallery,
+  clearGallery,
+  showLoader,
+  hideLoader,
+  showLoadMoreButton,
+  hideLoadMoreButton,
+};

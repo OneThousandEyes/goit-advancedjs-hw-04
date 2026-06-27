@@ -245,6 +245,34 @@ body {
   display: block;
 }
 
+.load-more-btn {
+  display: block;
+  margin: 32px auto;
+  padding: 12px 32px;
+  background: #4169e1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.load-more-btn:hover {
+  background: #305acc;
+}
+
+.load-more-btn:active {
+  background: #2a4a9a;
+}
+
+.load-more-btn.is-hidden {
+  display: none;
+}
+
 @keyframes shadowRolling {
   0% {
     box-shadow:
