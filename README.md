@@ -1,4 +1,3 @@
-# goit-advancedjs-hw-03
+# goit-advancedjs-hw-04
 
-Тема 6. HTTP-запити і взаємодія з бекендом.
-
+Тема 8. Синтаксис async/await і пагінація.
